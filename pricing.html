@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Pricing</title>
+      <meta name="description" content="Playbook">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" / >
+      <meta property="og:title" content="">
+      <meta property="og:type" content="">
+      <meta property="og:url" content="">
+      <meta property="og:image" content="">
+      <link rel="apple-touch-icon" href="icon.png">
+      <link rel="stylesheet" href="https://unpkg.com/chota@latest" />
+      <link rel="stylesheet" href="styles/main.css" />
+      <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+      <!---Google fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Serif:opsz,wght@8..144,200;8..144,300;8..144,600&display=swap" rel="stylesheet">
+      <!--Jquery-->
+      <script src="js/jquery.min.js"></script>
+   </head>
+   <body>
+      <!-- Block: Header -->
+      <header>
+         <div class="d-flex justify-content-between">
+            <a href="#" id="logo" class="logo"><img src="images/logo.svg"></a>
+            <button class="navbar-toggler" id="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="d-flex" id="menu">
+               <li class="links"><a href="index.html">Home</a></li>
+               <li class="links"><a href="about.html">About</a></li>
+               <li class="links link-active"><a href="pricing.html">Sign Up</a></li>
+            </ul>
+         </div>
+      </header>
+      <!--Block: Membership Packages-->
+      <section class="bg-light p-0 pb-section">
+         <div class="container mt-large">
+            <h1>Membership Packages</h1>
+         </div>
+      </section>
+      <div class="container">
+         <div class="text-center pricing-head">
+            <h3>Choose the plan that's right for your goals.</h3>
+            <strong>Pay by month and cancel at any time.</strong>
+         </div>
+         <!--Block: Pricing Section-->
+         <div class="text-left price-section">
+            <div class="d-flex">
+               <div class="w-33">
+                  <div class="p-right">
+                     <h4>Copilot</h4>
+                     <p>For podcasters and YouTubers who want to publish at least one daily short-form video from existing content.</p>
+                  </div>
+                  <div class="p-0 monthly-price">
+                     <h4>$749<br>
+                        Per Month
+                     </h4>
+                     <p>Unlimited Clipping For One Channel/Show</p>
+                     <h5>Top Features</h5>
+                     <ul>
+                        <li>- Caption Writing</li>
+                        <li>- Hashtag Optimization</li>
+                        <li>- Smart Clipping</li>
+                        <li>- Unlimited Episodes</li>
+                        <li class="link-active"><a href="https://buy.stripe.com/7sIcNS4Et7hMc4U3cc">Sign Up Now</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="w-33">
+                  <div>
+                     <h4>Copilot</h4>
+                     <p>For podcasters and YouTubers who want all of the features of the Copilot plan plus fully managed uploading.</p>
+                  </div>
+                  <div class="p-0 monthly-price">
+                     <h4>$1,499<br>
+                        Per Month
+                     </h4>
+                     <p>Unlimited Clipping For One Channel/Show</p>
+                     <h5>Top Features</h5>
+                     <ul>
+                        <li>- Fully Managed Uploads</li>
+                        <li>- Social Media Monitoring</li>
+                        <li>- Weekly Content Calendar</li>
+                        <li>- Weekly Insight Reports</li>
+                        <li class="link-active"><a href="https://buy.stripe.com/7sI15afj745A1qgfYZ">Sign Up Now</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="w-33">
+                  <div class="p-left">
+                     <h4>Custom</h4>
+                     <p>For podcasters and YouTubers that want to clip their back catalog or localize content to other langauges.</p>
+                  </div>
+                  <div class="monthly-price p-left">
+                     <h4>Custom<br>
+                        Pricing
+                     </h4>
+                     <p>Contact our sales team for more details.</p>
+                     <h5>Top Features</h5>
+                     <ul>
+                        <li>- Back Catalog Support</li>
+                        <li>- Localize Content</li>
+                        <li>- Podcast Episode Research</li>
+                        <li>- Podcast Scripts</li>
+                        <li class="link-active"><a href="mailto:hello@bgdy.com">Contact Sales</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="text-center">
+               <p>No setup fees for new customers on all plans.</p>
+            </div>
+         </div>
+      </div>
+      <!--Block: Footer-->
+      <footer>
+         <div class="container">
+            <a href="#" class="logo"><img src="images/logo-light.svg"></a>
+            <ul class="d-flex" id='footer-menu'>
+               <li class="links"><a href="index.html">Home</a></li>
+               <li class="links"><a href="about.html">About</a></li>
+               <li class="links active"><a href="pricing.html">Sign Up</a></li>
+            </ul>
+            <div class="d-flex justify-content-between copyright">
+               <ul class="d-flex">
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms</a></li>
+               </ul>
+               <span>All Rights Reserved © 2023 BGDY Creative</span>
+            </div>
+         </div>
+      </footer>
+      <!---Nav scroll--->
+      <script>
+         $(document).ready(function() {
+           $(window).scroll(function() {
+             if ($(document).scrollTop() > 50) {
+               $("header").addClass("sticky-nav");
+             } else {
+               $("header").removeClass("sticky-nav");
+             }
+           });
+         });
+      </script>        
+   </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>BGDY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" / >
+<!--Google font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<!--Google font-->
+</head>
+<body>
+<!---Hero Banner--->
+<img src="images/hero.png" class="hero-banner" alt="hero-banner" title="BGDY">
+<div class="text-center">
+   <h1>Be great.<br /> Do you.</h1>
+   <p>We write blogs, grow newsletters, and manage social media for venture-backed startups. Get started today<br> for a fixed monthly price.</p>
+   <img src="images/logo.svg" class="logo" alt="BGDY logo" title="BGDY"><br />
+   <a href="mailto:hello@bgdy.com">hello@bgdy.com</a>
+</div>
+<style>
+*{margin:0; padding:0;}
+:root {
+  --color-light: #fff; /**For FFF**/
+  --dark-primary:#5F2C87; /**For #5F2C87**/
+  --font-responsive:16px; /**For Responsive Font size 16px**/
+  --line-height-responsive:24px; /**For Responsive Line height 24px**/
+  --font-weight-normal:400; /**For Font Weight 400**/
+  --secondery-font: 'Rubik', sans-serif; /**For font Rubik**/
+  --heading-font: 'Rubik Mono One', sans-serif; /**For font Rubik Mono One**/
+}
+body{background-color:var(--dark-primary);}
+.hero-banner{max-height: 480px; min-height: 375px; width:100%; object-fit: cover;}
+.text-center{text-align:center; margin:64px auto 104px;}
+h1{font-family:var(--heading-font); color:var(--color-light); font-weight:var(--font-weight-normal); font-size: 144px; line-height: 144px; text-transform: uppercase; margin: 0 auto 32px;}
+p{color:var(--color-light); font-family: var(--secondery-font); font-weight:var(--font-weight-normal); font-size: 32px; line-height: 40px; max-width: 47%; margin: 0 auto;}
+.logo{margin:64px auto 40px;}
+a{font-weight:var(--font-weight-normal); font-size: 24px; line-height: 32px; text-align: center; text-decoration-line: underline; color:var(--color-light); font-family: var(--secondery-font);}
+/**Responsive media query**/
+@media only screen and (max-width: 768px){
+h1{font-size: 40px; line-height: 40px; margin: 0 auto 16px;}
+.text-center{margin:40px auto 55px;}
+p{font-size:var(--font-responsive); line-height:var(--line-height-responsive); max-width: 303px;}
+p br{display:none;}
+.logo{margin: 48px auto 24px; max-width: 47px;}
+a{font-size:var(--font-responsive); line-height:var(--line-height-responsive);}
+}
+</style>
+</body>
+</html>
